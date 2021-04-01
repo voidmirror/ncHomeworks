@@ -1,12 +1,14 @@
 package com.myown.chapter3;
 
 public class Employee implements Measurable {
+    private String name;
     private double salary = 0;
 
     public Employee() {
     }
 
-    public Employee(int salary) {
+    public Employee(String name, double salary) {
+        this.name = name;
         this.salary = salary;
     }
 
@@ -23,5 +25,16 @@ public class Employee implements Measurable {
     @Override
     public double getMeasure() {
         return salary;
+    }
+
+    @Override
+
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
