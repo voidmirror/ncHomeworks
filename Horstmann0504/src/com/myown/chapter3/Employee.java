@@ -28,6 +28,18 @@ public class Employee implements Measurable {
     }
 
     @Override
+    public Measurable largest(Measurable[] objects) {
+        if (objects.length != 0) {
+            Measurable max = objects[0];
+            for (int i = 1; i < objects.length; i++) {
+                if (objects[i].getMeasure() > max.getMeasure()) {
+                    max = objects[i];
+                }
+            }
+            return max;
+        }
+        return null;
+    }
 
 
     @Override
