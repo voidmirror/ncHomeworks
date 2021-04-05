@@ -1,6 +1,6 @@
 package com.myown.chapter4;
 
-public abstract class Point {
+public class Point {
     private double x;
     private double y;
 
@@ -29,6 +29,4 @@ public abstract class Point {
         x += dx;
         y += dy;
     }
-
-    abstract public Point getCenter();
 }

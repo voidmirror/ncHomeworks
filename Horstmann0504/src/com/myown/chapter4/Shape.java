@@ -4,4 +4,6 @@ abstract public class Shape extends Point {
     public Shape(double x, double y) {
         super(x, y);
     }
+
+    abstract public Point getCenter();
 }
